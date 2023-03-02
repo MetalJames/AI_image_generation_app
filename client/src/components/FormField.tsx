@@ -1,6 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const FormField = () => {
+type FormFieldProps ={
+    labelName: string,
+    type: string,
+    name: string,
+    placeholder: string,
+    value: {},
+    handleChange: {},
+    isSurpriseMe?: boolean,
+    handleSurpriseMe?: {}
+}
+
+const FormField = (props: FormFieldProps) => {
     return (
         <div>FormField</div>
     )

@@ -30,8 +30,7 @@ const Home = () => {
     const [searchedResults, setSearchedResults] = useState<null | any>(null!);
     const [searchTimeout, setSearchTimeout] = useState<null | any>(null!);
 
-    useEffect(() => {
-        const fetchPosts = async () => {
+    const fetchPosts = async () => {
             setLoading(true);
 
             try {
@@ -53,6 +52,7 @@ const Home = () => {
             }
         };
 
+    useEffect(() => {
         fetchPosts();
     }, []);
 

@@ -14,7 +14,6 @@ const openai = new OpenAIApi(configuration);
 
 router.route('/').get((req, res) => {
     res.send('Hello from WALL-E!');
-    // res.status(200).json({ message: 'Hello from DALL-E!' });
 });
 
 router.route('/').post(async (req, res) => {

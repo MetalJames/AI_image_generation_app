@@ -17,9 +17,6 @@ app.use('/api/v1/walle', dalleRoutes);
 
 app.get('/', async (req, res) => {
     res.send('Hello from WALL-E!')
-    // res.status(200).json({
-    //     message: 'Hello from WALL-E!',
-    // });
 });
 
 const startServer = async () => {

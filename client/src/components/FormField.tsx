@@ -6,7 +6,7 @@ type FormFieldProps ={
     name: string,
     placeholder: string,
     value: string | number | readonly string[] | undefined,
-    handleChange: ChangeEventHandler<HTMLInputElement>,
+    handleChange?: ChangeEventHandler<HTMLInputElement>,
     isSurpriseMe?: boolean,
     handleSurpriseMe?: MouseEventHandler<HTMLButtonElement>
 }
